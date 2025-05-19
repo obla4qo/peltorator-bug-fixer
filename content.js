@@ -1,8 +1,6 @@
 if (/^(.+\.)?peltorator\.[^./]+$/.test(location.hostname)) {
-  //console.log("оно живое")
   function fix1() {
     const navs = document.querySelectorAll('nav .nav-bar-item');
-    //console.log(navItems.length);
 
     if (navs.length >= 2) {
       const bug = navs[1];
@@ -10,15 +8,9 @@ if (/^(.+\.)?peltorator\.[^./]+$/.test(location.hostname)) {
       if (link) {
         link.href = 'https://службапоконтракту.рф';
         link.textContent = 'Поддержать Россию';
-        //console.log("ГОЙДА");
         return true;
-      } else {
-        //console.log("нет ссылки");
       }
-    } else {
-      //console.log("бля");
     }
-
     return false;
   }
 
@@ -48,11 +40,9 @@ if (/^(.+\.)?peltorator\.[^./]+$/.test(location.hostname)) {
       header.appendChild(font1);
       header.appendChild(font2);
       header.appendChild(font3);
-
-      //console.log("ГОЙДА 2");
+      
       return true;
     } else {
-      //console.log("бля2");
       return false;
     }
   }
@@ -69,10 +59,8 @@ if (/^(.+\.)?peltorator\.[^./]+$/.test(location.hostname)) {
     const span = result.singleNodeValue;
     if (span) {
       span.textContent = 'Существует такое древнерусское междометие “гойда”, означающее призыв к немедленному действию. Как же нам сейчас не хватает таких боевых кличей. Гойда, братья и сестры, гойда! Бойся, старый мир. Бойся, мы идем. Гойда! Гойда!';
-      //console.log("ГОЙДА 3");
       return true;
     } else {
-      //console.log("бля 3");
       return false;
     }
   }
@@ -85,9 +73,6 @@ if (/^(.+\.)?peltorator\.[^./]+$/.test(location.hostname)) {
 
     if (goyda || attempts >= maxattempt) {
       clearInterval(interval);
-      if (!goyda) {
-        //console.log("нихуя не получилось");
-      }
     }
   }, 500);
 
@@ -98,9 +83,6 @@ if (/^(.+\.)?peltorator\.[^./]+$/.test(location.hostname)) {
 
     if (goyda2 || attempts2 >= 20) {
       clearInterval(interval2);
-      if (!goyda2) {
-        //console.log("нихуя не получилось 2");
-      }
     }
   }, 500);
 
@@ -110,7 +92,6 @@ if (/^(.+\.)?peltorator\.[^./]+$/.test(location.hostname)) {
     attempts3++;
     if (goyda3 || attempts3 >= 20) {
       clearInterval(interval3);
-      //if (!goyda3) console.log("нихуя не получилось 3");
     }
   }, 500);
 }
